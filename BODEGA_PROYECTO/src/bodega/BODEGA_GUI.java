@@ -23,6 +23,11 @@ public class BODEGA_GUI extends JFrame {
 	private JTextField textField_1;
 	private JTextField textField_2;
 	private JTextField textField_3;
+	private JTextField textField_4;
+	private JTextField textField_5;
+	private JTextField textField_6;
+	private JTextField textField_7;
+	private JTextField textField_8;
 
 	/**
 	 * Launch the application.
@@ -136,8 +141,91 @@ public class BODEGA_GUI extends JFrame {
 		JTextArea textArea = new JTextArea();
 		scrollPane.setViewportView(textArea);
 		
-		JButton btnNewButton_1 = new JButton("BORRAR CAMPOS");
-		btnNewButton_1.setBounds(259, 143, 131, 21);
-		contentPane.add(btnNewButton_1);
+		JLabel lblEmpleado = new JLabel("EMPLEADO");
+		lblEmpleado.setFont(new Font("Comic Sans MS", Font.PLAIN, 20));
+		lblEmpleado.setBounds(577, 10, 133, 19);
+		contentPane.add(lblEmpleado);
+		
+		JLabel lblCdigo_1 = new JLabel("Código: ");
+		lblCdigo_1.setFont(new Font("Comic Sans MS", Font.PLAIN, 15));
+		lblCdigo_1.setBounds(543, 39, 59, 13);
+		contentPane.add(lblCdigo_1);
+		
+		textField_4 = new JTextField();
+		textField_4.setColumns(10);
+		textField_4.setBounds(607, 39, 131, 19);
+		contentPane.add(textField_4);
+		
+		JLabel lblDni = new JLabel("DNI:");
+		lblDni.setFont(new Font("Comic Sans MS", Font.PLAIN, 15));
+		lblDni.setBounds(543, 75, 74, 13);
+		contentPane.add(lblDni);
+		
+		textField_5 = new JTextField();
+		textField_5.setColumns(10);
+		textField_5.setBounds(607, 74, 131, 19);
+		contentPane.add(textField_5);
+		
+		JLabel lblNombre_1_1 = new JLabel("Nombre:");
+		lblNombre_1_1.setFont(new Font("Comic Sans MS", Font.PLAIN, 15));
+		lblNombre_1_1.setBounds(543, 100, 74, 13);
+		contentPane.add(lblNombre_1_1);
+		
+		textField_6 = new JTextField();
+		textField_6.setColumns(10);
+		textField_6.setBounds(607, 97, 131, 19);
+		contentPane.add(textField_6);
+		
+		JLabel lblNombre_1_1_1 = new JLabel("Apellido:");
+		lblNombre_1_1_1.setFont(new Font("Comic Sans MS", Font.PLAIN, 15));
+		lblNombre_1_1_1.setBounds(543, 122, 74, 13);
+		contentPane.add(lblNombre_1_1_1);
+		
+		textField_7 = new JTextField();
+		textField_7.setColumns(10);
+		textField_7.setBounds(607, 119, 131, 19);
+		contentPane.add(textField_7);
+		
+		JLabel lblNombre_1_1_1_1 = new JLabel("Sexo:");
+		lblNombre_1_1_1_1.setFont(new Font("Comic Sans MS", Font.PLAIN, 15));
+		lblNombre_1_1_1_1.setBounds(543, 147, 74, 13);
+		contentPane.add(lblNombre_1_1_1_1);
+		
+		JComboBox comboBox_1 = new JComboBox();
+		comboBox_1.setBounds(607, 143, 131, 21);
+		contentPane.add(comboBox_1);
+		
+		JLabel lblNombre_1_1_1_1_1 = new JLabel("Sueldo:");
+		lblNombre_1_1_1_1_1.setFont(new Font("Comic Sans MS", Font.PLAIN, 15));
+		lblNombre_1_1_1_1_1.setBounds(543, 181, 74, 13);
+		contentPane.add(lblNombre_1_1_1_1_1);
+		
+		textField_8 = new JTextField();
+		textField_8.setColumns(10);
+		textField_8.setBounds(607, 180, 131, 19);
+		contentPane.add(textField_8);
+		
+		JButton btnAgregarEmpleado = new JButton("AGREGAR EMPLEADO");
+		btnAgregarEmpleado.setBounds(543, 209, 195, 21);
+		contentPane.add(btnAgregarEmpleado);
+		
+		JButton btnEditarEmpleado = new JButton("EDITAR EMPLEADO");
+		btnEditarEmpleado.setBounds(543, 228, 195, 21);
+		contentPane.add(btnEditarEmpleado);
+		
+		JButton btnBuscarempleado = new JButton("BUSCAR EMPLEADO");
+		btnBuscarempleado.setBounds(543, 248, 195, 21);
+		contentPane.add(btnBuscarempleado);
+		
+		JButton btnEliminarEmpleado = new JButton("ELIMINAR EMPLEADO");
+		btnEliminarEmpleado.setBounds(543, 267, 195, 21);
+		contentPane.add(btnEliminarEmpleado);
+		
+		JScrollPane scrollPane_1 = new JScrollPane();
+		scrollPane_1.setBounds(748, 39, 243, 374);
+		contentPane.add(scrollPane_1);
+		
+		JTextArea textArea_1 = new JTextArea();
+		scrollPane_1.setViewportView(textArea_1);
 	}
 }
