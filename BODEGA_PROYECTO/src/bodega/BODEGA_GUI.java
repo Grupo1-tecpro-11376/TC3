@@ -135,5 +135,9 @@ public class BODEGA_GUI extends JFrame {
 		
 		JTextArea textArea = new JTextArea();
 		scrollPane.setViewportView(textArea);
+		
+		JButton btnNewButton_1 = new JButton("BORRAR CAMPOS");
+		btnNewButton_1.setBounds(259, 143, 131, 21);
+		contentPane.add(btnNewButton_1);
 	}
 }
